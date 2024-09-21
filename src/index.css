@@ -90,7 +90,6 @@ body {
 /* --- SKILLS SECTION --- */
 .skillsSection {
   background-color: rgba(255, 255, 255, 0.1);
-  /* Light transparent background */
   border-radius: 10px;
   padding: 20px;
   margin-top: var(--spacing);
@@ -127,7 +126,6 @@ body {
 
 .skillsTable tr:nth-child(even) {
   background-color: rgba(159, 159, 159, 0.2);
-  /* Alternating row color */
 }
 
 .skillsTable td {
@@ -141,7 +139,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10px;
 }
 
 .logo {
@@ -201,7 +198,54 @@ header {
   background-color: transparent;
 }
 
+/* --- GFG PROFILE LINK STYLES --- */
+.gfgProfile {
+  color: var(--hl-color);
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.gfgProfile:hover {
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 158, 102, 0.5);
+  border-radius: 5px;
+}
+
 /* --- MEDIA QUERIES --- */
+@media (max-width: 750px) {
+  .pageTitle {
+    font-size: 28px;
+    /* Adjust title size for mobile */
+  }
+
+  .btn {
+    width: 100%;
+    /* Full-width button on mobile */
+    padding: 15px;
+    /* Larger padding */
+  }
+
+  .skillsSection {
+    padding: 15px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .skillsTable th,
+  .skillsTable td {
+    font-size: 14px;
+    /* Smaller font for table */
+  }
+
+  .gfgProfile {
+    font-size: 16px;
+    /* Slightly larger font on small screens */
+    padding: 10px;
+    /* Increased padding */
+  }
+}
+
 @media (min-width: 750px) {
   .links {
     display: flex;

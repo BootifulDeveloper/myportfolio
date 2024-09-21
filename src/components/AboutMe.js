@@ -79,7 +79,12 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 </div>
               </div>
             </div>
-            <a href="https://www.geeksforgeeks.org/user/rahul_chauhan_1998/" target="_blank" rel="noopener noreferrer">
+            <a 
+              className="gfgProfile" 
+              href="https://www.geeksforgeeks.org/user/rahul_chauhan_1998/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               GeeksForGeeks Profile
             </a>
             <div className="skillsContainer">
