@@ -59,7 +59,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               <div className="row">
                 <div className="col-12 col-md-6 info">
                   <span>Name:</span>
-                  <p>Rahul Chauhan</p>
+                  <p>{name}</p>
                 </div>
                 <div className="col-12 col-md-6 info">
                   <span>Email:</span>
@@ -79,14 +79,56 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 </div>
               </div>
             </div>
-            <a href="https://www.geeksforgeeks.org/user/rahul_chauhan_1998/" target="_blank">GeeksForGeeks Profile</a>
+            <a href="https://www.geeksforgeeks.org/user/rahul_chauhan_1998/" target="_blank" rel="noopener noreferrer">
+              GeeksForGeeks Profile
+            </a>
+            <div className="skillsContainer">
+              <h5>Skills:</h5>
+              <table className="skillsTable">
+                <thead>
+                  <tr>
+                    <th>Skill</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Java Development</td>
+                    <td>Working knowledge in Java programming, delivering scalable and efficient solutions.</td>
+                  </tr>
+                  <tr>
+                    <td>Spring Boot</td>
+                    <td>Proficient in building microservices with Spring Boot framework.</td>
+                  </tr>
+                  <tr>
+                    <td>Cache-based Work</td>
+                    <td>Experience with caching mechanisms to optimize application performance.</td>
+                  </tr>
+                  <tr>
+                    <td>Spring Batch</td>
+                    <td>Skilled in developing batch processing applications using Spring Batch.</td>
+                  </tr>
+                  <tr>
+                    <td>Kafka-based Processing</td>
+                    <td>Knowledgeable in building data pipelines and messaging systems with Kafka.</td>
+                  </tr>
+                  <tr>
+                    <td>WhatsApp Chatbot & Notifications</td>
+                    <td>Implemented automated notifications and chatbots using WhatsApp API.</td>
+                  </tr>
+                  <tr>
+                    <td>MySQL</td>
+                    <td>Strong expertise in database design and optimization with MySQL.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div className="buttonContainer">
               <button className="btn downloadCV" onClick={handleDownload} disabled={downloading}>
                 {downloading ? "Downloading..." : "Download Resume"}
               </button>{" "}
               <SocialIcons />
             </div>
-
           </div>
         </motion.div>
       </div>

@@ -4,7 +4,7 @@ import AnimatedRoutes from "./components/AnimatedRoutes";
 function App() {
   const personalDetails = {
     name: "Rahul Chauhan",
-    location: "Noida,Uttar Pardesh",
+    location: "Noida, Uttar Pradesh",
     tagline: "Work Profession: Software Engineer",
     email: "rahulchauhan.12071998@gmail.com",
     availability: "Open for work/Problem Solving",
