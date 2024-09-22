@@ -125,6 +125,14 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                     <td>MySQL</td>
                     <td>Strong expertise in database design and optimization with MySQL.</td>
                   </tr>
+                  <tr>
+                    <td>ELK Alert Configuration</td>
+                    <td>Hands-on experience in configuring alerts with ELK stack for monitoring and notifications.</td>
+                  </tr>
+                  <tr>
+                    <td>ELK Dashboard</td>
+                    <td>Skilled in creating visualizations and dashboards in Kibana for log and metric analysis.</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
