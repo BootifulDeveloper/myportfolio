@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
-import resume from "../pages/about/Rahul_Chauhan_Software_Engineer_CV.pdf";
+import resume from "../pages/about/Rahul_Chauhan_Java_Developer_Resume.pdf";
 
 const AboutMe = ({ name, email, location, availability, brand }) => {
   const [ref, inView] = useInView({
@@ -21,7 +21,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
     setDownloading(true);
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "Rahul_Chauhan_Software_Engineer_CV.pdf";
+    link.download = "Rahul_Chauhan_Java_Developer_Resume.pdf";
     link.onload = () => {
       link.remove();
       setDownloading(false);
@@ -51,7 +51,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Glad you're here!</h4>
-            <h5>Software Engineer focused on solving business issues with innovation.</h5>
+            <h5>Java Developer : Driven to deliver impactful software solutions.</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
@@ -138,7 +138,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
             </div>
             <div className="buttonContainer">
               <button className="btn downloadCV" onClick={handleDownload} disabled={downloading}>
-                {downloading ? "Downloading..." : "Download Resume"}
+                {downloading ? "Downloading..." : "Download My Resume"}
               </button>{" "}
               <SocialIcons />
             </div>
