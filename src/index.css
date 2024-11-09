@@ -139,7 +139,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .logo {
@@ -223,10 +222,9 @@ header {
 
   .btn {
     width: 100%;
-    padding: 15px;
     /* Full-width button on mobile */
-    font-size: 16px;
-    /* Adjust button font for better touch interaction */
+    padding: 15px;
+    /* Larger padding */
   }
 
   .skillsSection {
@@ -242,38 +240,9 @@ header {
 
   .gfgProfile {
     font-size: 16px;
+    /* Slightly larger font on small screens */
     padding: 10px;
     /* Increased padding */
-  }
-
-  header {
-    padding: 10px;
-    /* Reduce padding for smaller screens */
-    flex-direction: column;
-    /* Stack header elements */
-  }
-
-  .logo {
-    margin-bottom: 10px;
-    /* Add margin to separate logo from navigation */
-  }
-
-  .links {
-    position: static;
-    display: block;
-    width: 100%;
-    padding: 0;
-  }
-
-  .links a {
-    padding: 15px 0;
-    /* Increase padding for easier touch interactions */
-    font-size: 16px;
-  }
-
-  .dropdown-toggle {
-    font-size: 18px;
-    /* Larger font size for better readability */
   }
 }
 
@@ -284,7 +253,7 @@ header {
     justify-content: flex-end;
     position: relative;
     top: auto;
-    width: auto;
+    width: 0;
     left: 0;
     padding: 0 10px;
   }
