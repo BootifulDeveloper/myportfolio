@@ -9,6 +9,7 @@
   --grey: rgba(159, 159, 159, 0.9);
   --spacing: 50px;
   --sm-spacing: 30px;
+  --mobile-spacing: 20px;
 }
 
 /* --- ANIMATIONS --- */
@@ -40,6 +41,7 @@ body,
 
 body {
   font-family: "Poppins", sans-serif;
+  color: var(--text-color);
 }
 
 /* --- GLOBAL STYLES --- */
@@ -215,6 +217,10 @@ header {
 
 /* --- MEDIA QUERIES --- */
 @media (max-width: 750px) {
+  body {
+    padding: var(--mobile-spacing);
+  }
+
   .pageTitle {
     font-size: 28px;
     /* Adjust title size for mobile */
@@ -243,6 +249,19 @@ header {
     /* Slightly larger font on small screens */
     padding: 10px;
     /* Increased padding */
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--mobile-spacing) var(--mobile-spacing);
+  }
+
+  .links {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: block;
   }
 }
 
