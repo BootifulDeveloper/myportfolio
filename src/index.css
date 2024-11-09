@@ -9,7 +9,6 @@
   --grey: rgba(159, 159, 159, 0.9);
   --spacing: 50px;
   --sm-spacing: 30px;
-  --mobile-spacing: 20px;
 }
 
 /* --- ANIMATIONS --- */
@@ -41,7 +40,6 @@ body,
 
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--text-color);
 }
 
 /* --- GLOBAL STYLES --- */
@@ -141,6 +139,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -217,10 +216,6 @@ header {
 
 /* --- MEDIA QUERIES --- */
 @media (max-width: 750px) {
-  body {
-    padding: var(--mobile-spacing);
-  }
-
   .pageTitle {
     font-size: 28px;
     /* Adjust title size for mobile */
@@ -228,9 +223,10 @@ header {
 
   .btn {
     width: 100%;
-    /* Full-width button on mobile */
     padding: 15px;
-    /* Larger padding */
+    /* Full-width button on mobile */
+    font-size: 16px;
+    /* Adjust button font for better touch interaction */
   }
 
   .skillsSection {
@@ -246,22 +242,38 @@ header {
 
   .gfgProfile {
     font-size: 16px;
-    /* Slightly larger font on small screens */
     padding: 10px;
     /* Increased padding */
   }
 
   header {
+    padding: 10px;
+    /* Reduce padding for smaller screens */
     flex-direction: column;
-    align-items: flex-start;
-    padding: var(--mobile-spacing) var(--mobile-spacing);
+    /* Stack header elements */
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    /* Add margin to separate logo from navigation */
   }
 
   .links {
-    position: relative;
-    top: auto;
-    left: auto;
+    position: static;
     display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .links a {
+    padding: 15px 0;
+    /* Increase padding for easier touch interactions */
+    font-size: 16px;
+  }
+
+  .dropdown-toggle {
+    font-size: 18px;
+    /* Larger font size for better readability */
   }
 }
 
@@ -272,7 +284,7 @@ header {
     justify-content: flex-end;
     position: relative;
     top: auto;
-    width: 0;
+    width: auto;
     left: 0;
     padding: 0 10px;
   }
