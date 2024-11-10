@@ -36,18 +36,23 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         <motion.div
           className="personalImage col-12 col-lg-4"
           ref={ref}
-          initial={{ x: "-10vw", opacity: 0 }}
-          animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          initial={{ x: "-5vw", opacity: 0 }}
+          animate={inView ? { x: 0, opacity: 1 } : { x: "-5vw", opacity: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
         >
-          <img src={aboutMeImg} alt={name} />
+          <img
+            src={aboutMeImg}
+            alt={name}
+            loading="lazy" // Enable lazy loading for performance
+            className="responsiveImage" // Add class for responsive image styles
+          />
         </motion.div>
         <motion.div
           className="personalInfo col-12 col-lg-8"
           ref={ref}
-          initial={{ x: "10vw", opacity: 0 }}
-          animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          initial={{ x: "5vw", opacity: 0 }}
+          animate={inView ? { x: 0, opacity: 1 } : { x: "5vw", opacity: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
         >
           <div className="contentContainer">
             <h4>Glad you're here!</h4>

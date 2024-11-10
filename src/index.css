@@ -215,34 +215,33 @@ header {
 
 /* --- MEDIA QUERIES --- */
 @media (max-width: 750px) {
+
+  /* Adjusting the page title for smaller screens */
   .pageTitle {
     font-size: 28px;
-    /* Adjust title size for mobile */
   }
 
+  /* Making the button full-width for better touch interaction */
   .btn {
     width: 100%;
-    /* Full-width button on mobile */
     padding: 15px;
-    /* Larger padding */
   }
 
+  /* Reducing padding in the skills section for smaller screens */
   .skillsSection {
     padding: 15px;
-    /* Reduce padding for smaller screens */
   }
 
+  /* Adjusting font size in the table cells for readability */
   .skillsTable th,
   .skillsTable td {
     font-size: 14px;
-    /* Smaller font for table */
   }
 
+  /* Adjusting font size and padding for the GFG profile link */
   .gfgProfile {
     font-size: 16px;
-    /* Slightly larger font on small screens */
     padding: 10px;
-    /* Increased padding */
   }
 }
 
