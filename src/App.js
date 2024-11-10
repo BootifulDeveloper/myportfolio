@@ -5,7 +5,7 @@ function App() {
   const personalDetails = {
     name: "Rahul Chauhan",
     location: "Noida, Uttar Pradesh",
-    tagline: "Work Profession: Software Engineer",
+    tagline: "Work Profession: Java Software Engineer",
     email: "rahulchauhan.12071998@gmail.com",
     availability: "Open for work/Problem Solving",
     brand:

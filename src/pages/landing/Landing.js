@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import landingImage from "../../images/bgmehd.png";
+
 import SocialIcons from "../../components/SocialIcons";
 
 const Landing = ({ name, tagline }) => {
@@ -69,7 +69,7 @@ const Landing = ({ name, tagline }) => {
           {tagline}
         </motion.p>
       </div>
-      <div className="image-container">
+      {/* <div className="image-container">
         <motion.img
           className="landingImage"
           ref={ref}
@@ -80,7 +80,7 @@ const Landing = ({ name, tagline }) => {
           src={landingImage}
           alt="Rahul Chauhan"
         />
-      </div>
+      </div> */}
 
       <SocialIcons />
     </section>
