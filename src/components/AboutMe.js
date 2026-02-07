@@ -103,40 +103,36 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Java Development</td>
-                    <td>Working knowledge in Java programming, delivering scalable and efficient solutions.</td>
+                    <td>Java (SE/EE)</td>
+                    <td>OOP, collections, and multithreading for backend services.</td>
                   </tr>
                   <tr>
                     <td>Spring Boot</td>
-                    <td>Proficient in building microservices with Spring Boot framework.</td>
+                    <td>Microservices, REST APIs, and clean architecture patterns.</td>
                   </tr>
                   <tr>
-                    <td>Cache-based Work</td>
-                    <td>Experience with caching mechanisms to optimize application performance.</td>
+                    <td>Spring MVC & Security</td>
+                    <td>JWT authentication, RBAC, and secure API design.</td>
                   </tr>
                   <tr>
-                    <td>Spring Batch</td>
-                    <td>Skilled in developing batch processing applications using Spring Batch.</td>
+                    <td>Hibernate & JPA</td>
+                    <td>Data modeling, ORM, and repository patterns.</td>
                   </tr>
                   <tr>
-                    <td>Kafka-based Processing</td>
-                    <td>Knowledgeable in building data pipelines and messaging systems with Kafka.</td>
+                    <td>Databases</td>
+                    <td>MySQL performance tuning and MongoDB integrations.</td>
                   </tr>
                   <tr>
-                    <td>WhatsApp Chatbot & Notifications</td>
-                    <td>Implemented automated notifications and chatbots using WhatsApp API.</td>
+                    <td>Payment Gateways</td>
+                    <td>Razorpay & CCAvenue integrations with webhook handling.</td>
                   </tr>
                   <tr>
-                    <td>MySQL</td>
-                    <td>Strong expertise in database design and optimization with MySQL.</td>
+                    <td>WhatsApp Cloud API</td>
+                    <td>Delivery/read-status tracking and messaging workflows.</td>
                   </tr>
                   <tr>
-                    <td>ELK Alert Configuration</td>
-                    <td>Hands-on experience in configuring alerts with ELK stack for monitoring and notifications.</td>
-                  </tr>
-                  <tr>
-                    <td>ELK Dashboard</td>
-                    <td>Skilled in creating visualizations and dashboards in Kibana for log and metric analysis.</td>
+                    <td>DevOps & Testing</td>
+                    <td>Kubernetes deployments, JUnit testing, and Git workflows.</td>
                   </tr>
                 </tbody>
               </table>

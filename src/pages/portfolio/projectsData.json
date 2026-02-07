@@ -1,122 +1,82 @@
 [
   {
     "id": 1,
-    "title": "Bike Buddy",
-    "slug": "bike-buddy",
+    "title": "Smartbox Locker Reservation Module",
+    "slug": "smartbox-locker-reservation",
     "image": "/projectImages/bike.png",
-    "summary": "Route-planning experience that helps guardians map safe cycling paths.",
-    "description": "I was responsible for the routing functionality of Bike Buddy, an application that helps parents and guardians keep their children safe while cycling. Utilises the Leaflet.js library and TomTom Routing/Reverse Geolocation APIs to create an interactive and visually appealing map that allows a user to plot a route, taking into account various factors such as traffic levels, bicycle lanes, and elevation.",
+    "summary": "Locker availability, reservation lifecycle, allocation, and release workflow APIs.",
+    "description": "Designed and maintained microservices powering locker availability checks, reservation lifecycle management, allocation rules, and release workflows. Focused on reliability, concurrency safety, and clean REST architecture for seamless customer experiences.",
     "highlights": [
-      "Built a multi-step routing flow with live map previews",
-      "Integrated TomTom routing and reverse geolocation",
-      "Layered elevation and traffic data for safer routes"
+      "Built reservation lifecycle APIs with concurrency-safe workflows",
+      "Implemented allocation and release rules for high-traffic usage",
+      "Designed clean REST endpoints aligned with domain boundaries"
     ],
-    "technologies": "Leaflet | jQuery | Bootstrap",
-    "github": "https://github.com/mdyeates/bike-buddy",
-    "deployed": "https://norrinradd8.github.io/bike_buddy/",
+    "technologies": "Java | Spring Boot | REST APIs | MySQL | Kubernetes",
+    "github": "https://github.com/",
+    "deployed": "https://portfolio-eec4a.web.app",
     "bgcolor": "#f37737",
-    "category": "Mapping",
-    "year": "2023",
-    "role": "Maps + Front-End"
+    "category": "Microservices",
+    "year": "2024",
+    "role": "Java Backend Engineer"
   },
   {
     "id": 2,
-    "title": "Weather",
-    "slug": "weather-dashboard",
+    "title": "Payment Gateway Integration",
+    "slug": "payment-gateway-integration",
     "image": "/projectImages/weather.png",
-    "summary": "A weather dashboard with smart theming, forecasts, and search history.",
-    "technologies": "jQuery | HTML | CSS",
-    "description": "This dashboard uses the OpenWeatherMap API to retrieve detailed weather data, including the city name, date, weather icon, temperature, humidity, and wind speed. The dashboard has a 5-day forecast feature and a search history feature that saves past searches for easy access. It also has a dark/light theme that changes the look of the page based on day or night in the searched location and uses the geolocation API to automatically determine the user's current location and display the weather.",
+    "summary": "Multi-gateway payments with secure APIs and idempotent webhook handling.",
+    "technologies": "Spring Boot | Razorpay | CCAvenue | Webhooks | JWT",
+    "description": "Integrated Razorpay and CCAvenue payment gateways into a secure backend stack. Implemented idempotent webhook processing, payment status reconciliation, and failure recovery to ensure consistent transaction outcomes.",
     "highlights": [
-      "Automated dark/light mode based on local time",
-      "Search history with quick recall",
-      "Forecast and live conditions on one screen"
+      "Integrated two payment gateways with unified workflows",
+      "Implemented idempotent webhook handlers for reliability",
+      "Automated payment status updates for downstream services"
     ],
-    "github": "https://github.com/mdyeates/weather-app",
-    "deployed": "https://mdyeates.github.io/weather-app/",
+    "github": "https://github.com/",
+    "deployed": "https://portfolio-eec4a.web.app",
     "bgcolor": "#29cbe0",
-    "category": "Dashboard",
-    "year": "2022",
-    "role": "Front-End"
+    "category": "Payments",
+    "year": "2024",
+    "role": "Backend Engineer"
   },
   {
     "id": 3,
-    "title": "Team",
-    "slug": "team-dashboard",
+    "title": "WhatsApp Notification Service",
+    "slug": "whatsapp-notification-service",
     "image": "/projectImages/team.png",
-    "summary": "CLI tool that generates a clean employee directory site.",
-    "technologies": "JS | Node | Bootstrap | OOP | TTD",
-    "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
+    "summary": "WhatsApp messaging with delivery and read-status tracking via webhooks.",
+    "technologies": "WhatsApp Cloud API | Spring Boot | Webhooks",
+    "description": "Built a notification microservice using WhatsApp Cloud API to send transactional updates. Implemented webhook-driven delivery and read-status tracking to ensure message observability and reliable customer communication.",
     "highlights": [
-      "CLI prompts for multiple employee roles",
-      "Generated HTML templates with consistent styling",
-      "Object-oriented patterns for data validation"
+      "Automated WhatsApp notifications with Cloud API",
+      "Webhook-based delivery and read-status tracking",
+      "Structured logs for observability and support"
     ],
-    "github": "https://github.com/mdyeates/team-dashboard",
-    "deployed": "https://drive.google.com/file/d/1_atUXTM-L9r4NccsrPaaWqPyNu37ftwH/view",
+    "github": "https://github.com/",
+    "deployed": "https://portfolio-eec4a.web.app",
     "bgcolor": "#6c4bf4",
-    "category": "Automation",
-    "year": "2022",
-    "role": "Node CLI"
+    "category": "Messaging",
+    "year": "2023",
+    "role": "Backend Engineer"
   },
   {
     "id": 4,
-    "title": "Quiz",
-    "slug": "coding-quiz",
+    "title": "Face Recognition Service",
+    "slug": "face-recognition-service",
     "image": "/projectImages/quiz.png",
-    "summary": "Timed JavaScript quiz with scoring and feedback.",
-    "technologies": "JS | HTML | CSS",
-    "description": "A quiz app on the fundamentals of JavaScript. There are 5 randomly selected multiple-choice questions and the user will have a time limit of 50 seconds. The remaining time will determine their score at the end. The user will be penalised by 10 seconds for every incorrect answer.",
+    "summary": "Face detection and recognition with APIs to store and identify faces.",
+    "technologies": "Java | OpenCV | REST APIs",
+    "description": "Implemented face detection and recognition capabilities using OpenCV. Delivered APIs to store face embeddings, identify faces, and support downstream verification workflows.",
     "highlights": [
-      "Randomized question order",
-      "Time penalties for incorrect answers",
-      "Score summary at completion"
+      "Built face detection and recognition APIs",
+      "Stored and matched face embeddings for identification",
+      "Optimized processing for reliable response times"
     ],
-    "github": "https://github.com/mdyeates/coding-quiz",
-    "deployed": "https://mdyeates.github.io/coding-quiz/",
+    "github": "https://github.com/",
+    "deployed": "https://portfolio-eec4a.web.app",
     "bgcolor": "#f85781",
-    "category": "Front-End",
-    "year": "2021",
-    "role": "Front-End"
-  },
-  {
-    "id": 5,
-    "title": "P1",
-    "slug": "p1-heroes",
-    "image": "/projectImages/P1.png",
-    "summary": "F1 updates, standings, and a driver knowledge card game.",
-    "description": "Welcome to P1, your virtual pit stop for the latest updates and standings in the world of F1. But that's not all—we've also got the ultimate card game where driver knowledge is the key to victory.",
-    "technologies": "React | Framer | CSS | Bootstrap | Node",
-    "highlights": [
-      "Interactive card game flow",
-      "Live standings experience",
-      "Responsive layout for race-day browsing"
-    ],
-    "github": "https://github.com/Jake-W95/P1",
-    "deployed": "https://p1-heroes.netlify.app/",
-    "bgcolor": "#ffcc33",
-    "category": "React",
+    "category": "Computer Vision",
     "year": "2023",
-    "role": "Front-End"
-  },
-  {
-    "id": 6,
-    "title": "Planner",
-    "slug": "daily-planner",
-    "image": "/projectImages/planner.png",
-    "summary": "Daily planner that keeps the 9-5 schedule on track.",
-    "technologies": "JS | Bootstrap | Moment",
-    "description": "Make every hour count with this simple Daily Planner App. You can keep track of all important appointments during a normal 9-5 work day!",
-    "highlights": [
-      "Color-coded schedule blocks",
-      "Local storage persistence",
-      "Time-aware status indicators"
-    ],
-    "github": "https://github.com/mdyeates/daily-planner",
-    "deployed": "https://mdyeates.github.io/daily-planner/",
-    "bgcolor": "#3e67ff",
-    "category": "Productivity",
-    "year": "2021",
-    "role": "Front-End"
+    "role": "Java Engineer"
   }
 ]
