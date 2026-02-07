@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 import SocialIcons from "../../components/SocialIcons";
 
@@ -18,9 +19,6 @@ const Landing = ({ name, tagline }) => {
       // opacity: "0.3",
       mixBlendMode: "lighten",
       height: "90%",
-    
-    
- 
     },
 
     textContainer: {
@@ -68,6 +66,20 @@ const Landing = ({ name, tagline }) => {
         >
           {tagline}
         </motion.p>
+        <motion.div
+          className="ctaButtons"
+          ref={ref}
+          initial={{ y: "10vw", opacity: 0 }}
+          animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
+        >
+          <Link className="btn" to="/portfolio">
+            View Portfolio
+          </Link>
+          <Link className="btn btn-secondary" to="/contact">
+            Let’s Talk
+          </Link>
+        </motion.div>
       </div>
       {/* <div className="image-container">
         <motion.img
