@@ -3,6 +3,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Landing from "../pages/landing/Landing";
 import About from "../pages/about/About";
 import Portfolio from "../pages/portfolio/Portfolio";
+import ProjectsOverview from "../pages/projects/ProjectsOverview";
+import ProjectDetails from "../pages/projects/ProjectDetails";
+import ProjectArchive from "../pages/projects/ProjectArchive";
 import Contact from "../pages/contact/Contact";
 
 const AnimatedRoutes = ({ personalDetails }) => {
@@ -24,6 +27,9 @@ const AnimatedRoutes = ({ personalDetails }) => {
         }
       />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/projects" element={<ProjectsOverview />} />
+      <Route path="/projects/archive" element={<ProjectArchive />} />
+      <Route path="/projects/:slug" element={<ProjectDetails />} />
       <Route
         path="/contact"
         element={

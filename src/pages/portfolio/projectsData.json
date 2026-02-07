@@ -1,64 +1,122 @@
 [
   {
+    "id": 1,
     "title": "Bike Buddy",
-    "image": "./projectImages/bike.png",
-    "description": "I was responsible for the routing functionality of Bike Buddy, an application that helps parents and guardians keep their children safe while cycling. Utilises the Leaflet.js library and TomTom Routing/Reverse Geolocation API's to create an interactive and visually appealing map that allows a user to plot a route, taking into account various factors such as traffic levels, bicycle lanes, and elevation.",
+    "slug": "bike-buddy",
+    "image": "/projectImages/bike.png",
+    "summary": "Route-planning experience that helps guardians map safe cycling paths.",
+    "description": "I was responsible for the routing functionality of Bike Buddy, an application that helps parents and guardians keep their children safe while cycling. Utilises the Leaflet.js library and TomTom Routing/Reverse Geolocation APIs to create an interactive and visually appealing map that allows a user to plot a route, taking into account various factors such as traffic levels, bicycle lanes, and elevation.",
+    "highlights": [
+      "Built a multi-step routing flow with live map previews",
+      "Integrated TomTom routing and reverse geolocation",
+      "Layered elevation and traffic data for safer routes"
+    ],
     "technologies": "Leaflet | jQuery | Bootstrap",
     "github": "https://github.com/mdyeates/bike-buddy",
     "deployed": "https://norrinradd8.github.io/bike_buddy/",
     "bgcolor": "#f37737",
-    "id": "1"
+    "category": "Mapping",
+    "year": "2023",
+    "role": "Maps + Front-End"
   },
   {
+    "id": 2,
     "title": "Weather",
-    "image": "./projectImages/weather.png",
+    "slug": "weather-dashboard",
+    "image": "/projectImages/weather.png",
+    "summary": "A weather dashboard with smart theming, forecasts, and search history.",
     "technologies": "jQuery | HTML | CSS",
-    "description": " This dashboard uses the OpenWeatherMap API to retrieve detailed weather data, including the city name, date, weather icon, temperature, humidity, and wind speed. The dashboard has a 5-day forecast feature and a search history feature that saves past searches for easy access. It also has a dark/light theme that changes the look of the page based on day or night in the searched location and uses the geolocation API to automatically determine the user's current location and display the weather.",
+    "description": "This dashboard uses the OpenWeatherMap API to retrieve detailed weather data, including the city name, date, weather icon, temperature, humidity, and wind speed. The dashboard has a 5-day forecast feature and a search history feature that saves past searches for easy access. It also has a dark/light theme that changes the look of the page based on day or night in the searched location and uses the geolocation API to automatically determine the user's current location and display the weather.",
+    "highlights": [
+      "Automated dark/light mode based on local time",
+      "Search history with quick recall",
+      "Forecast and live conditions on one screen"
+    ],
     "github": "https://github.com/mdyeates/weather-app",
     "deployed": "https://mdyeates.github.io/weather-app/",
     "bgcolor": "#29cbe0",
-    "id": "2"
+    "category": "Dashboard",
+    "year": "2022",
+    "role": "Front-End"
   },
   {
+    "id": 3,
     "title": "Team",
-    "image": "./projectImages/team.png",
+    "slug": "team-dashboard",
+    "image": "/projectImages/team.png",
+    "summary": "CLI tool that generates a clean employee directory site.",
     "technologies": "JS | Node | Bootstrap | OOP | TTD",
     "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
+    "highlights": [
+      "CLI prompts for multiple employee roles",
+      "Generated HTML templates with consistent styling",
+      "Object-oriented patterns for data validation"
+    ],
     "github": "https://github.com/mdyeates/team-dashboard",
     "deployed": "https://drive.google.com/file/d/1_atUXTM-L9r4NccsrPaaWqPyNu37ftwH/view",
     "bgcolor": "#6c4bf4",
-    "id": "3"
+    "category": "Automation",
+    "year": "2022",
+    "role": "Node CLI"
   },
   {
+    "id": 4,
     "title": "Quiz",
-    "image": "./projectImages/quiz.png",
+    "slug": "coding-quiz",
+    "image": "/projectImages/quiz.png",
+    "summary": "Timed JavaScript quiz with scoring and feedback.",
     "technologies": "JS | HTML | CSS",
     "description": "A quiz app on the fundamentals of JavaScript. There are 5 randomly selected multiple-choice questions and the user will have a time limit of 50 seconds. The remaining time will determine their score at the end. The user will be penalised by 10 seconds for every incorrect answer.",
+    "highlights": [
+      "Randomized question order",
+      "Time penalties for incorrect answers",
+      "Score summary at completion"
+    ],
     "github": "https://github.com/mdyeates/coding-quiz",
     "deployed": "https://mdyeates.github.io/coding-quiz/",
     "bgcolor": "#f85781",
-    "id": "4"
+    "category": "Front-End",
+    "year": "2021",
+    "role": "Front-End"
   },
-
   {
+    "id": 5,
     "title": "P1",
-    "image": "./projectImages/P1.png",
+    "slug": "p1-heroes",
+    "image": "/projectImages/P1.png",
+    "summary": "F1 updates, standings, and a driver knowledge card game.",
     "description": "Welcome to P1, your virtual pit stop for the latest updates and standings in the world of F1. But that's not all—we've also got the ultimate card game where driver knowledge is the key to victory.",
     "technologies": "React | Framer | CSS | Bootstrap | Node",
+    "highlights": [
+      "Interactive card game flow",
+      "Live standings experience",
+      "Responsive layout for race-day browsing"
+    ],
     "github": "https://github.com/Jake-W95/P1",
     "deployed": "https://p1-heroes.netlify.app/",
     "bgcolor": "#ffcc33",
-    "id": "1"
+    "category": "React",
+    "year": "2023",
+    "role": "Front-End"
   },
-
   {
+    "id": 6,
     "title": "Planner",
-    "image": "./projectImages/planner.png",
+    "slug": "daily-planner",
+    "image": "/projectImages/planner.png",
+    "summary": "Daily planner that keeps the 9-5 schedule on track.",
     "technologies": "JS | Bootstrap | Moment",
     "description": "Make every hour count with this simple Daily Planner App. You can keep track of all important appointments during a normal 9-5 work day!",
+    "highlights": [
+      "Color-coded schedule blocks",
+      "Local storage persistence",
+      "Time-aware status indicators"
+    ],
     "github": "https://github.com/mdyeates/daily-planner",
     "deployed": "https://mdyeates.github.io/daily-planner/",
     "bgcolor": "#3e67ff",
-    "id": "6"
+    "category": "Productivity",
+    "year": "2021",
+    "role": "Front-End"
   }
 ]
