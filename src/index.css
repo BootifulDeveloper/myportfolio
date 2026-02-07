@@ -87,6 +87,17 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.btn.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--hl-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.btn.btn-secondary:hover {
+  background-color: rgba(0, 158, 102, 0.15);
+}
+
 /* --- SKILLS SECTION --- */
 .skillsSection {
   background-color: rgba(255, 255, 255, 0.1);
@@ -142,7 +153,11 @@ header {
 }
 
 .logo {
-  height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--secondary-text-color);
+  max-width: 420px;
 }
 
 .links {

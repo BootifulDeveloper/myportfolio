@@ -4,6 +4,7 @@ import "./index.css";
 import "./pages/landing/landing.css";
 import "./pages/about/about.css";
 import "./pages/portfolio/portfolio.css";
+import "./pages/projects/projects.css";
 import "./pages/contact/contact.css";
 
 import App from "./App";
