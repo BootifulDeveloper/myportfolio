@@ -1,5 +1,65 @@
 [
   {
+    "id": 7,
+    "title": "Inventory Management API",
+    "slug": "inventory-management-api",
+    "image": "/projectImages/spring-inventory.svg",
+    "summary": "Spring Boot REST API for tracking products, stock levels, suppliers, and reorder activity.",
+    "description": "A Java Spring Boot inventory service designed around clean REST endpoints, validation, and persistent data workflows. The project models products, suppliers, stock adjustments, and low-stock reporting so teams can keep warehouse inventory accurate and auditable.",
+    "highlights": [
+      "Designed CRUD REST endpoints with layered controller, service, and repository architecture",
+      "Added request validation and consistent error responses for API consumers",
+      "Modeled inventory, supplier, and stock movement relationships with Spring Data JPA"
+    ],
+    "technologies": "Java | Spring Boot | Spring Data JPA | REST API | MySQL",
+    "github": null,
+    "deployed": null,
+    "bgcolor": "#138a3d",
+    "category": "Spring Boot",
+    "year": "2024",
+    "role": "Back-End"
+  },
+  {
+    "id": 8,
+    "title": "Employee Leave Management",
+    "slug": "employee-leave-management",
+    "image": "/projectImages/spring-leave.svg",
+    "summary": "Java backend for employee leave requests, approvals, balances, and status tracking.",
+    "description": "A Spring Boot application for managing employee leave workflows from request creation through manager approval. The backend focuses on role-aware business rules, leave balance calculations, and clear status transitions for HR-style operations.",
+    "highlights": [
+      "Implemented leave request lifecycle states for pending, approved, and rejected workflows",
+      "Separated HR, manager, and employee responsibilities through service-level rules",
+      "Structured APIs for leave balances, request history, and approval queues"
+    ],
+    "technologies": "Java | Spring Boot | REST API | Hibernate | MySQL",
+    "github": null,
+    "deployed": null,
+    "bgcolor": "#0f766e",
+    "category": "Spring Boot",
+    "year": "2024",
+    "role": "Java Developer"
+  },
+  {
+    "id": 9,
+    "title": "Library Management System",
+    "slug": "library-management-system",
+    "image": "/projectImages/spring-library.svg",
+    "summary": "Spring Boot service for cataloguing books, members, loans, and returns.",
+    "description": "A Java library management backend that organizes books, members, borrowing records, and return workflows. The project demonstrates practical Spring Boot patterns for data modeling, business validation, and maintainable API design.",
+    "highlights": [
+      "Created domain models for books, members, loans, due dates, and returns",
+      "Added validation for availability checks before issuing books",
+      "Organized reusable service methods for catalogue search and lending operations"
+    ],
+    "technologies": "Java | Spring Boot | Spring Data JPA | REST API | SQL",
+    "github": null,
+    "deployed": null,
+    "bgcolor": "#2563eb",
+    "category": "Spring Boot",
+    "year": "2023",
+    "role": "Back-End"
+  },
+  {
     "id": 1,
     "title": "Bike Buddy",
     "slug": "bike-buddy",

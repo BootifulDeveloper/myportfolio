@@ -49,12 +49,16 @@ const ProjectDetails = () => {
             ))}
           </ul>
           <div className="projectDetailsActions">
-            <a className="btn" href={project.deployed} target="_blank" rel="noreferrer">
-              Live Experience
-            </a>
-            <a className="btn btn-secondary" href={project.github} target="_blank" rel="noreferrer">
-              View Source
-            </a>
+            {project.deployed && (
+              <a className="btn" href={project.deployed} target="_blank" rel="noreferrer">
+                Live Experience
+              </a>
+            )}
+            {project.github && (
+              <a className="btn btn-secondary" href={project.github} target="_blank" rel="noreferrer">
+                View Source
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -72,12 +72,16 @@ const Project = ({ technologies, title, image, color, id, github, deployed, desc
         <h3 className="modalTitle">{title}</h3>
         <p className="projectDescription">{description}</p>
         <div className="modalActions">
-          <button className="btn" onClick={() => (window.location.href = github)}>
-            GitHub Repo
-          </button>
-          <button className="btn" onClick={() => (window.location.href = deployed)}>
-            Live Link
-          </button>
+          {github && (
+            <button className="btn" onClick={() => (window.location.href = github)}>
+              GitHub Repo
+            </button>
+          )}
+          {deployed && (
+            <button className="btn" onClick={() => (window.location.href = deployed)}>
+              Live Link
+            </button>
+          )}
           <Link className="btn btn-secondary" to={`/projects/${slug}`} onClick={handleCloseModal}>
             Project Details
           </Link>

@@ -72,9 +72,11 @@ const ProjectsOverview = () => {
                 <Link className="btn" to={`/projects/${project.slug}`}>
                   View Details
                 </Link>
-                <a className="btn btn-secondary" href={project.deployed} target="_blank" rel="noreferrer">
-                  Live Demo
-                </a>
+                {project.deployed && (
+                  <a className="btn btn-secondary" href={project.deployed} target="_blank" rel="noreferrer">
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </article>
