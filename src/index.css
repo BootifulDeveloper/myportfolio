@@ -39,7 +39,23 @@ body,
 }
 
 body {
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--hl-color);
+  outline-offset: 4px;
 }
 
 /* --- GLOBAL STYLES --- */
@@ -76,15 +92,20 @@ body {
   border: none;
   font-size: 14px;
   padding: 12px var(--sm-spacing);
-  border-radius: 20px;
+  border-radius: 999px;
   margin-top: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
   background-color: #03b979;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn.btn-secondary {
@@ -165,11 +186,12 @@ header {
   position: absolute;
   top: 93px;
   right: 0px;
-  background-color: var(--bg-color);
+  background-color: rgba(16, 16, 16, 0.98);
   width: 100%;
   padding: 10px;
   z-index: 999;
-  border-radius: 10px;
+  border-radius: 0 0 18px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .links a {
@@ -194,8 +216,10 @@ header {
 .dropdown-toggle {
   background: none;
   border: none;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+  padding: 8px;
 }
 
 .openMenu,
@@ -263,11 +287,12 @@ header {
 @media (min-width: 750px) {
   .links {
     display: flex;
-    background-color: var(--bg-color);
+    background-color: transparent;
+    border-bottom: 0;
     justify-content: flex-end;
     position: relative;
     top: auto;
-    width: 0;
+    width: auto;
     left: 0;
     padding: 0 10px;
   }
@@ -275,6 +300,10 @@ header {
   .links a {
     padding: 0px;
     margin-left: 3px;
+  }
+
+  .links a.active {
+    color: var(--hl-color);
   }
 
   .links a:not(:last-child) {

@@ -1,6 +1,5 @@
 import PageHeader from "../../components/PageHeader";
 import SocialIcons from "../../components/SocialIcons";
-import Form from "../../components/Form";
 import ContactInfo from "../../components/ContactInfo";
 
 const Contact = ({ name, email, location }) => {
