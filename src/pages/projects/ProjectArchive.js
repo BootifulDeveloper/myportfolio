@@ -31,9 +31,11 @@ const ProjectArchive = () => {
             <span>{project.technologies}</span>
             <span className="archiveLinks">
               <Link to={`/projects/${project.slug}`}>Details</Link>
-              <a href={project.deployed} target="_blank" rel="noreferrer">
-                Live
-              </a>
+              {project.deployed && (
+                <a href={project.deployed} target="_blank" rel="noreferrer">
+                  Live
+                </a>
+              )}
             </span>
           </div>
         ))}
