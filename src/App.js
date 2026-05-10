@@ -5,11 +5,11 @@ function App() {
   const personalDetails = {
     name: "Rahul Chauhan",
     location: "Noida, Uttar Pradesh",
-    tagline: "Work Profession: Java Software Engineer",
+    tagline: "Java Software Engineer building scalable backend systems",
     email: "rahulchauhan.12071998@gmail.com",
-    availability: "Open for work/Problem Solving",
+    availability: "Open to backend engineering opportunities",
     brand:
-      "I am a Java Software Engineer with a passion for building scalable and efficient solutions. With a strong background in backend development, I focus on delivering high-quality results and optimizing system performance. I enjoy collaborating with teams and continuously seek opportunities for learning and growth in dynamic environments.",
+      "I am a Java Software Engineer focused on resilient backend systems, clean APIs, and production-ready services. I enjoy turning business problems into maintainable Spring Boot applications, event-driven workflows, optimized database interactions, and observable systems that teams can confidently operate.",
   };
 
   return (

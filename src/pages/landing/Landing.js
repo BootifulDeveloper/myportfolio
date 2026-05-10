@@ -4,74 +4,70 @@ import { Link } from "react-router-dom";
 
 import SocialIcons from "../../components/SocialIcons";
 
+const highlights = [
+  { value: "Java", label: "Backend engineering" },
+  { value: "Spring", label: "Microservices + APIs" },
+  { value: "Kafka", label: "Event-driven systems" },
+];
+
 const Landing = ({ name, tagline }) => {
-  const styles = {
-    landing: {
-      height: "calc(100% - 93px)",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    },
-
-    landingImage: {
-      position: "absolute",
-      bottom: "0",
-      // opacity: "0.3",
-      mixBlendMode: "lighten",
-      height: "90%",
-    },
-
-    textContainer: {
-      display: "flex",
-      flexDirection: "column",
-      letterSpacing: "1px",
-      textAlign: "center",
-      zIndex: "1",
-      color: "#fff",
-      textShadow: "1px 1px 3px #000",
-    },
-
-    name: {
-      color: "#fff",
-      fontWeight: "700",
-      marginTop: "-100px",
-      paddingBottom: "28px",
-    },
-  };
-
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
 
+  const revealFromTop = {
+    initial: { y: "-10vw", opacity: 0 },
+    animate: inView ? { y: 0, opacity: 1 } : { y: "-10vw", opacity: 0 },
+  };
+
+  const revealFromBottom = {
+    initial: { y: "10vw", opacity: 0 },
+    animate: inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 },
+  };
+
   return (
-    <section className="landing" style={styles.landing}>
-      <div className="textContainer" style={styles.textContainer}>
+    <section className="landing">
+      <div className="heroGlow" aria-hidden="true" />
+      <div className="textContainer">
+        <motion.p
+          className="eyebrow"
+          ref={ref}
+          {...revealFromTop}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+        >
+          Available for backend engineering roles
+        </motion.p>
         <motion.h1
           className="name"
-          style={styles.name}
           ref={ref}
-          initial={{ y: "-10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 1 } : { y: "-10vw", opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          {...revealFromTop}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.05 }}
         >
           {name}
         </motion.h1>
         <motion.p
           className="description"
           ref={ref}
-          initial={{ y: "10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          {...revealFromBottom}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
         >
           {tagline}
+        </motion.p>
+        <motion.p
+          className="heroSummary"
+          ref={ref}
+          {...revealFromBottom}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.16 }}
+        >
+          I build reliable Java services with Spring Boot, Kafka, MySQL, caching, batch processing, and production
+          monitoring in mind.
         </motion.p>
         <motion.div
           className="ctaButtons"
           ref={ref}
-          initial={{ y: "10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
+          {...revealFromBottom}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.22 }}
         >
           <Link className="btn" to="/portfolio">
             View Portfolio
@@ -80,20 +76,20 @@ const Landing = ({ name, tagline }) => {
             Let’s Talk
           </Link>
         </motion.div>
-      </div>
-      {/* <div className="image-container">
-        <motion.img
-          className="landingImage"
+        <motion.div
+          className="heroHighlights"
           ref={ref}
-          initial={{ y: "10vw", opacity: 0 }}
-          animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          style={styles.landingImage}
-          src={landingImage}
-          alt="Rahul Chauhan"
-        />
-      </div> */}
-
+          {...revealFromBottom}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.28 }}
+        >
+          {highlights.map((item) => (
+            <div className="highlightCard" key={item.value}>
+              <strong>{item.value}</strong>
+              <span>{item.label}</span>
+            </div>
+          ))}
+        </motion.div>
+      </div>
       <SocialIcons />
     </section>
   );

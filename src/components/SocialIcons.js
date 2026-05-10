@@ -1,5 +1,3 @@
-
-
 const SocialIcons = () => {
   const styles = {
     icon: {
@@ -11,13 +9,17 @@ const SocialIcons = () => {
   };
 
   return (
-    <div className="socialIcons" style={styles.socialIcons}>
-     
-      <a className="icon" style={styles.icon} href="https://www.linkedin.com/in/rahul-chauhan-766528219">
-        <i className="fa-brands fa-linkedin" aria-hidden="true" title="Rahul Chauhan' LinkedIn Profile"></i>
+    <div className="socialIcons" aria-label="Social profile links">
+      <a
+        className="icon"
+        style={styles.icon}
+        href="https://www.linkedin.com/in/rahul-chauhan-766528219"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Visit Rahul Chauhan on LinkedIn"
+      >
+        <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
       </a>
-      
-      
     </div>
   );
 };
